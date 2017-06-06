@@ -1,4 +1,4 @@
-cmake_package "esrocos_types/base" 
+cmake_package "esrocos_base/types/base" 
 
 #cmake_package "esrocos_types/drivers"
 
