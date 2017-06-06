@@ -1,15 +1,10 @@
-name: esrocos.types
+name: esrocos.core
 
 version_control:
 
-        - esrocos_types/base:
+        - esrocos_base/types/base:
           github: KynneB/types-base
           branch: master
-
-
-name: esrocos.tools
-
-version_control:
 
         - esrocos_base/tools:
           github: ESROCOS/tools
