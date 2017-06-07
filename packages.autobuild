@@ -1,9 +1,16 @@
 cmake_package "esrocos_base/types/base" 
 
+
 #cmake_package "esrocos_types/drivers"
 
 #cmake_package "esrocos_types/core"
 
 #cmake_package "esrocos_types/sensor_samples" 
 
-import_package "esrocos_base/tools"
+import_package "esrocos_base/tools" do |pkg|
+
+  puts pkg.srcdir
+
+  Autoproj.env_add 'PATH', pkg.srcdir
+
+end
