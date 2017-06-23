@@ -1,10 +1,9 @@
 cmake_package "esrocos_base/types/base" 
 
+cmake_package "esrocos_base/types/drivers"
 
-#cmake_package "esrocos_types/drivers"
+cmake_package "esrocos_base/types/core"
 
-#cmake_package "esrocos_types/core"
-
-#cmake_package "esrocos_types/sensor_samples" 
+cmake_package "esrocos_base/types/sensor_samples" 
 
 cmake_package "esrocos_base/tools"

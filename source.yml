@@ -3,8 +3,21 @@ name: esrocos.core
 version_control:
 
         - esrocos_base/types/base:
-          github: KynneB/types-base
-          branch: master
+          github: ESROCOS/types-base
+          branch: cleanup
+
+        - esrocos_base/types/core:
+          github: ESROCOS/types-core
+          branch: cleanup
+
+        - esrocos_base/types/drivers:
+          github: ESROCOS/types-drivers
+          branch: cleanup
+
+        - esrocos_base/types/sensor_samples:
+          github: ESROCOS/types-sensor_samples
+          branch: cleanup
+
 
         - esrocos_base/tools:
           github: ESROCOS/tools
