@@ -18,7 +18,6 @@ version_control:
           github: ESROCOS/types-sensor_samples
           branch: cleanup
 
-
         - esrocos_base/tools:
           github: ESROCOS/tools
           branch: master
