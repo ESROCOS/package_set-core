@@ -25,4 +25,4 @@ version_control:
         - tools/workflow:
           github: ESROCOS/tools-workflow
           branch: monolithic_asn
-          tag: v0.1
+          tag: v0.2
