@@ -5,19 +5,24 @@ version_control:
         - types/base:
           github: ESROCOS/types-base
           branch: monolithic_asn
+          tag: v0.1
 
         - types/core:
           github: ESROCOS/types-core
           branch: monolithic_asn
+          tag: v0.1
 
         - types/drivers:
           github: ESROCOS/types-drivers
           branch: monolithic_asn
+          tag: v0.1
 
         - types/sensor_samples:
           github: ESROCOS/types-sensor_samples
           branch: monolithic_asn
+          tag: v0.1
 
         - tools/workflow:
           github: ESROCOS/tools-workflow
           branch: monolithic_asn
+          tag: v0.1
