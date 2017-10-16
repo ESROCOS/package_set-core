@@ -4,20 +4,20 @@ version_control:
 
         - types/base:
           github: ESROCOS/types-base
-          branch: cleanup
+          branch: monolithic_asn
 
         - types/core:
           github: ESROCOS/types-core
-          branch: cleanup
+          branch: monolithic_asn
 
         - types/drivers:
           github: ESROCOS/types-drivers
-          branch: cleanup
+          branch: monolithic_asn
 
         - types/sensor_samples:
           github: ESROCOS/types-sensor_samples
-          branch: cleanup
+          branch: monolithic_asn
 
         - tools/workflow:
           github: ESROCOS/tools-workflow
-          branch: master
+          branch: monolithic_asn
