@@ -7,3 +7,5 @@ cmake_package "types/core"
 cmake_package "types/sensor_samples" 
 
 cmake_package "tools/workflow"
+
+import_package "external/opencv"
