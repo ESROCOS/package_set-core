@@ -1,3 +1,5 @@
+
+
 cmake_package "types/base" 
 
 cmake_package "types/drivers"
@@ -10,6 +12,5 @@ cmake_package "tools/workflow"
 
 cmake_package "external/opencv" do |pkg|
   pkg.define("CMAKE_BUILD_TYPE","Release")
-  pkg.define("CMAKE_INSTALL_PREFIX",Autoproj.root_dir+"/install/opencv")
   pkg.define("BUILD_SHARED_LIBS","OFF")
 end
