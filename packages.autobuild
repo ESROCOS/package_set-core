@@ -8,7 +8,4 @@ cmake_package "types/sensor_samples"
 
 cmake_package "tools/workflow"
 
-cmake_package "external/opencv" do |pkg|
-  pkg.define("CMAKE_BUILD_TYPE","Release")
-  pkg.define("BUILD_SHARED_LIBS","OFF")
-end
+
