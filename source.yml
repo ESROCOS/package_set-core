@@ -1,5 +1,11 @@
 name: esrocos.core
 
+imports:
+
+        - github: orocos-toolchain/autoproj
+        - github: rock-core/package_set
+        - github: rock-core/rock-package_set
+
 version_control:
 
         - types/base:
@@ -21,3 +27,12 @@ version_control:
         - tools/workflow:
           github: ESROCOS/tools-workflow
           branch: master
+
+        - gui/vizkit3d:
+          github: rock-core/gui-vizkit3d
+          branch: master
+
+        - gui/robot_model:
+          github: rock-gui/gui-robot_model
+          branch: master
+

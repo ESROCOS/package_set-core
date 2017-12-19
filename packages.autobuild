@@ -8,4 +8,16 @@ cmake_package "types/sensor_samples"
 
 cmake_package "tools/workflow"
 
+cmake_package "gui/vizkit3d" do |pkg|
+    # Taken from rock.core
+    if manifest.package_enabled?('rtt', false) # the toolchain is built, add it to the rtt_target
+        pkg.define "OROCOS_TARGET", Autoproj.config.get('rtt_target')
+    end
+
+    Autoproj.env_add_path 'OSG_FILE_PATH', File.join(pkg.prefix, "share", "vizkit")
+    Autoproj.env_add_path 'VIZKIT_PLUGIN_RUBY_PATH', File.join(pkg.prefix, 'lib')
+    Autoproj.env_add_path 'VIZKIT_PLUGIN_RUBY_PATH', File.join(pkg.prefix, 'lib', 'vizkit')
+end
+
+cmake_package "gui/robot_model"
 
