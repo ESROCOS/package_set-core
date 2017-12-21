@@ -21,3 +21,4 @@ end
 
 cmake_package "gui/robot_model"
 
+cmake_package "types/asn1_types_support"

@@ -8,6 +8,10 @@ imports:
 
 version_control:
 
+        - types/asn1_types_support:
+          github: ESROCOS/types-asn1_types_support
+          branch: master
+
         - types/base:
           github: ESROCOS/types-base
           branch: master
