@@ -32,12 +32,8 @@ version_control:
           github: ESROCOS/tools-workflow
           branch: master
 
-        - gui/vizkit3d:
-          github: rock-core/gui-vizkit3d
-          branch: master
-
-        - gui/robot_model:
-          github: rock-gui/gui-robot_model
+        - gui/vizkit3d_taste:
+          github: ESROCOS/gui-vizkit3d_taste
           branch: master
 
 ignore_packages:
