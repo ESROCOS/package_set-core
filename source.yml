@@ -40,3 +40,9 @@ version_control:
           github: rock-gui/gui-robot_model
           branch: master
 
+ignore_packages:
+        # gui/robot_model depends on gui/control_ui and gui/vizkit but only for the Ruby
+        # functionality. We ignore it to avoid pulling other unneeeded dependencies.
+        - gui/control_ui
+        - gui/vizkit
+
