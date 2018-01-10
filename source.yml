@@ -8,12 +8,12 @@ imports:
 
 version_control:
 
-        - types/asn1_types_support:
-          github: ESROCOS/types-asn1_types_support
-          branch: master
-
         - types/base:
           github: ESROCOS/types-base
+          branch: master
+
+        - types/base_support:
+          github: ESROCOS/types-base_support
           branch: master
 
         - types/core:
@@ -28,17 +28,21 @@ version_control:
           github: ESROCOS/types-sensor_samples
           branch: master
 
+        - types/sensor_samples_support:
+          github: ESROCOS/types-sensor_samples_support
+          branch: master
+
         - tools/workflow:
           github: ESROCOS/tools-workflow
+          branch: master
+          
+        # Fork of gui-robot_model from rock-gui without dependencies not needed in ESROCOS
+        - gui/robot_model:
+          github: ESROCOS/gui-robot_model
           branch: master
 
         - gui/vizkit3d_taste:
           github: ESROCOS/gui-vizkit3d_taste
           branch: master
 
-ignore_packages:
-        # gui/robot_model depends on gui/control_ui and gui/vizkit but only for the Ruby
-        # functionality. We ignore it to avoid pulling other unneeeded dependencies.
-        - gui/control_ui
-        - gui/vizkit
 
