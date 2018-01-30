@@ -14,4 +14,4 @@ cmake_package "tools/workflow"
 
 cmake_package "gui/vizkit3d_taste"
 
-
+cmake_package "control/ilk-compiler"

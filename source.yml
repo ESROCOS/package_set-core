@@ -45,4 +45,6 @@ version_control:
           github: ESROCOS/gui-vizkit3d_taste
           branch: master
 
+        - control/ilk-compiler:
+          github: ESROCOS/ilk-compiler.git
 
