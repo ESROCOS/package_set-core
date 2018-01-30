@@ -47,4 +47,9 @@ version_control:
 
         - control/ilk-compiler:
           github: ESROCOS/ilk-compiler.git
+          branch: dev-autoproj
+
+        - control/ilk-generator:
+          github: ESROCOS/ilk-generator.git
+          branch: dev-autoproj
 

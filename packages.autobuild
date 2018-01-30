@@ -14,4 +14,8 @@ cmake_package "tools/workflow"
 
 cmake_package "gui/vizkit3d_taste"
 
-cmake_package "control/ilk-compiler"
+cmake_package "control/ilk-compiler" do |pkg|
+   Autoproj.env_add_path("LUA_PATH", pkg.srcdir)
+end
+
+cmake_package "control/ilk-generator"
