@@ -32,12 +32,12 @@ def esrocos_package(name, workspace: Autoproj.workspace)
 
       yield(pkg) if block_given?
  
-      #works but causes non-termination error state when errors during build occur
-      #pkg.post_install do
-      #    Autobuild::Subprocess.run(
-      #                        pkg, "install",
-      #                        "esrocos_build_project",
-      #                        :working_directory => pkg.srcdir)
-      #end
+      #works but causes non-termination error state when errors during build occur and --no-retry is not set
+      puts pkg.post_install do
+          Autobuild::Subprocess.run(
+                              pkg, "install",
+                              "esrocos_build_project",
+                              :working_directory => pkg.srcdir)
+      end
     end    
 end
