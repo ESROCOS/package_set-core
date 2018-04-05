@@ -28,13 +28,15 @@ Autoproj.env_set 'ESROCOS_CMAKE', ENV["AUTOPROJ_CURRENT_ROOT"]+"/install/cmake_m
 def esrocos_package(name, workspace: Autoproj.workspace)
     package_common(:cmake, name, workspace: workspace) do |pkg|
       pkg.depends_on 'cmake'
+      pkg.depends_on 'tools/workflow'
+      
       common_make_based_package_setup(pkg)
 
       yield(pkg) if block_given?
  
       #works but causes non-termination error state when errors during build occur and --no-retry is not set
-      puts pkg.post_install do
-          Autobuild::Subprocess.run(
+      pkg.post_install do
+        puts Autobuild::Subprocess.run(
                               pkg, "install",
                               "esrocos_build_project",
                               :working_directory => pkg.srcdir)
