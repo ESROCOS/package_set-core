@@ -25,7 +25,7 @@ Autoproj.env_set 'ESROCOS_TEMPLATES', ENV["AUTOPROJ_CURRENT_ROOT"]+"/install/tem
 
 Autoproj.env_set 'ESROCOS_CMAKE', ENV["AUTOPROJ_CURRENT_ROOT"]+"/install/cmake_macros/esrocos.cmake"
 
-#def esrocos_package(name, workspace: Autoproj.workspace)
+def esrocos_package(name, workspace: Autoproj.workspace)
     package_common(:cmake, name, workspace: workspace) do |pkg|
       pkg.depends_on 'cmake'
       pkg.depends_on 'tools/workflow'
@@ -40,6 +40,6 @@ Autoproj.env_set 'ESROCOS_CMAKE', ENV["AUTOPROJ_CURRENT_ROOT"]+"/install/cmake_m
       #                        pkg, "install",
       #                        "esrocos_build_project",
       #                        :working_directory => pkg.srcdir)
-      #end
+      end
     end    
 end
