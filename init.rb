@@ -40,6 +40,6 @@ def esrocos_package(name, workspace: Autoproj.workspace)
       #                        pkg, "install",
       #                        "esrocos_build_project",
       #                        :working_directory => pkg.srcdir)
-      end
+      #end
     end    
 end
