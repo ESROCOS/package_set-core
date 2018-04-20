@@ -12,6 +12,8 @@ cmake_package "types/sensor_samples_support"
 
 cmake_package "tools/workflow"
 
+cmake_package "tools/config"
+
 cmake_package "gui/vizkit3d_taste"
 
 cmake_package "control/ilk-compiler" do |pkg|
