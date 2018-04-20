@@ -52,4 +52,8 @@ version_control:
         - control/ilk-generator:
           github: ESROCOS/ilk-generator.git
           branch: dev-autoproj
+          
+        - tools/libpus:
+          github: ESROCOS/tools-libpus
+          branch: master
 

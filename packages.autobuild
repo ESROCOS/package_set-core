@@ -19,3 +19,6 @@ cmake_package "control/ilk-compiler" do |pkg|
 end
 
 cmake_package "control/ilk-generator"
+
+cmake_package "tools/libpus"
+
