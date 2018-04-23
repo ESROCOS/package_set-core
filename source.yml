@@ -30,7 +30,7 @@ version_control:
 
         - types/sensor_samples_support:
           github: ESROCOS/types-sensor_samples_support
-          branch: master
+          branch: integration
 
         - tools/workflow:
           github: ESROCOS/tools-workflow
