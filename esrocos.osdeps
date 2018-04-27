@@ -24,3 +24,11 @@ lua:
     debian:
         default: [lua5.2, luarocks, liblua5.2-dev]
 
+python3-pyside:
+    debian:
+        default: python3-pyside
+
+pyside-tools:
+    debian:
+        default: pyside-tools
+
