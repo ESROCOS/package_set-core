@@ -35,9 +35,13 @@ version_control:
         - tools/workflow:
           github: ESROCOS/tools-workflow
           branch: master
-          
+
         - tools/config:
           github: ESROCOS/tools-config
+          branch: master
+
+        - tools/stream_aligner:
+          github: ESROCOS/tools-stream_aligner
           branch: master
 
         # Fork of gui-robot_model from rock-gui without dependencies not needed in ESROCOS
@@ -56,7 +60,7 @@ version_control:
         - control/ilk-generator:
           github: ESROCOS/ilk-generator.git
           branch: dev-autoproj
-          
+
         - tools/libpus:
           github: ESROCOS/tools-libpus
           branch: master
