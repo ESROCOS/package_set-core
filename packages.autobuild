@@ -14,7 +14,9 @@ cmake_package "tools/workflow"
 
 cmake_package "tools/config"
 
-cmake_package "gui/vizkit3d_taste"
+cmake_package "gui/vizkit3d_taste" do |pkg|
+    pkg.parallel_build_level = 1
+end
 
 cmake_package "control/ilk-compiler" do |pkg|
    Autoproj.env_add("LUA_PATH", pkg.srcdir + "/?.lua")
