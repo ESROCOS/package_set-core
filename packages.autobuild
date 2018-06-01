@@ -15,6 +15,7 @@ cmake_package "tools/workflow"
 cmake_package "tools/config"
 
 cmake_package "gui/vizkit3d_taste" do |pkg|
+    # Set build not parallel to avoid conflict with TASTE build
     pkg.parallel_build_level = 1
 end
 
@@ -24,5 +25,7 @@ end
 
 cmake_package "control/ilk-generator"
 
-cmake_package "tools/libpus"
-
+cmake_package "tools/libpus" do |pkg|
+    # Set build not parallel to avoid conflict with TASTE build
+    pkg.parallel_build_level = 1
+end
