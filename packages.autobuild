@@ -29,3 +29,8 @@ cmake_package "tools/libpus" do |pkg|
     # Set build not parallel to avoid conflict with TASTE build
     pkg.parallel_build_level = 1
 end
+
+cmake_package "tools/imagetransfer" do |pkg|
+    # Set build not parallel to avoid conflict with TASTE build
+    pkg.parallel_build_level = 1
+end
