@@ -2,14 +2,6 @@ cmake_package "types/base"
 
 cmake_package "types/base_support"
 
-cmake_package "types/drivers"
-
-cmake_package "types/core"
-
-cmake_package "types/sensor_samples" 
-
-cmake_package "types/sensor_samples_support" 
-
 cmake_package "tools/workflow"
 
 cmake_package "tools/config"
