@@ -45,3 +45,7 @@ version_control:
           github: ESROCOS/tools-libpus
           branch: master
 
+        - tools/imagetransfer:
+          github: ESROCOS/tools-imagetransfer
+          branch: master
+
