@@ -1,22 +1,19 @@
+require 'esrocos_autoproj'
+
 cmake_package "types/base" 
 
-cmake_package "types/base_support"
-
-cmake_package "types/drivers"
-
-cmake_package "types/core"
-
-cmake_package "types/sensor_samples" 
-
-cmake_package "types/sensor_samples_support" 
+cmake_package "types/base_support" do |pkg|
+    if(ENV.has_key?('ESROCOS_RCC_TARGET'))
+        Esrocos.build_rtems_gailser(pkg, ENV['ESROCOS_RCC_TARGET'])
+    end
+end
 
 cmake_package "tools/workflow"
 
 cmake_package "tools/config"
 
 cmake_package "gui/vizkit3d_taste" do |pkg|
-    # Set build not parallel to avoid conflict with TASTE build
-    pkg.parallel_build_level = 1
+    Esrocos.set_taste_package(pkg)
 end
 
 cmake_package "control/ilk-compiler" do |pkg|
@@ -26,11 +23,10 @@ end
 cmake_package "control/ilk-generator"
 
 cmake_package "tools/libpus" do |pkg|
-    # Set build not parallel to avoid conflict with TASTE build
-    pkg.parallel_build_level = 1
+    Esrocos.set_taste_package(pkg)
 end
 
 cmake_package "tools/imagetransfer" do |pkg|
-    # Set build not parallel to avoid conflict with TASTE build
-    pkg.parallel_build_level = 1
+    Esrocos.set_taste_package(pkg)
 end
+
