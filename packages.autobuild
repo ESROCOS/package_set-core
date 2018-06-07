@@ -2,23 +2,20 @@ cmake_package "types/base"
 
 cmake_package "types/base_support"
 
-cmake_package "types/drivers"
-
-cmake_package "types/core"
-
-cmake_package "types/sensor_samples" 
-
-cmake_package "types/sensor_samples_support" 
-
 cmake_package "tools/workflow"
 
 cmake_package "tools/config"
 
 cmake_package "tools/transformer"
+
 cmake_package "tools/transformer_pybind"
+
 cmake_package "tools/transformation_modelling"
 
-cmake_package "gui/vizkit3d_taste"
+cmake_package "gui/vizkit3d_taste" do |pkg|
+    # Set build not parallel to avoid conflict with TASTE build
+    pkg.parallel_build_level = 1
+end
 
 cmake_package "control/ilk-compiler" do |pkg|
    Autoproj.env_add("LUA_PATH", pkg.srcdir + "/?.lua")
@@ -26,5 +23,12 @@ end
 
 cmake_package "control/ilk-generator"
 
-cmake_package "tools/libpus"
+cmake_package "tools/libpus" do |pkg|
+    # Set build not parallel to avoid conflict with TASTE build
+    pkg.parallel_build_level = 1
+end
 
+cmake_package "tools/imagetransfer" do |pkg|
+    # Set build not parallel to avoid conflict with TASTE build
+    pkg.parallel_build_level = 1
+end

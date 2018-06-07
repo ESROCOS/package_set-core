@@ -18,22 +18,6 @@ version_control:
           github: ESROCOS/types-base_support
           branch: master
 
-        - types/core:
-          github: ESROCOS/types-core
-          branch: master
-
-        - types/drivers:
-          github: ESROCOS/types-drivers
-          branch: master
-
-        - types/sensor_samples:
-          github: ESROCOS/types-sensor_samples
-          branch: master
-
-        - types/sensor_samples_support:
-          github: ESROCOS/types-sensor_samples_support
-          branch: master
-
         - tools/workflow:
           github: ESROCOS/tools-workflow
           branch: master
@@ -73,5 +57,9 @@ version_control:
           
         - tools/libpus:
           github: ESROCOS/tools-libpus
+          branch: master
+
+        - tools/imagetransfer:
+          github: ESROCOS/tools-imagetransfer
           branch: master
 
