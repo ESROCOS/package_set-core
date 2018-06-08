@@ -39,4 +39,4 @@ boost:
 
 ncurses:
     debian: 
-        default: libcurses-dev
+        default: libncurses-dev
