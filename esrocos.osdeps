@@ -1,6 +1,3 @@
-#opencv:
-#    debian:
-#        default: libopencv-dev
 pyyaml:
     pip:
         PyYAML
@@ -32,3 +29,14 @@ pyside-tools:
     debian:
         default: pyside-tools
 
+eigen:
+    debian:
+        default: libeigen3-dev
+
+boost:
+    debian: 
+        default: libboost-all-dev
+
+ncurses:
+    debian: 
+        default: libncurses-dev

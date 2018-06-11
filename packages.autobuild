@@ -12,6 +12,12 @@ cmake_package "tools/workflow"
 
 cmake_package "tools/config"
 
+cmake_package "tools/transformer"
+
+cmake_package "tools/transformer_pybind"
+
+cmake_package "tools/transformation_modelling"
+
 cmake_package "gui/vizkit3d_taste" do |pkg|
     Esrocos.set_taste_package(pkg)
 end
