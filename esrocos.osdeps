@@ -29,6 +29,18 @@ pyside-tools:
     debian:
         default: pyside-tools
 
+python3-jsonschema:
+    debian:
+        default: python3-jsonschema
+
+python3-mako:
+    debian:
+        default: python3-mako
+
+python3-simplejson:
+    debian:
+        default: python3-simplejson
+
 eigen:
     debian:
         default: libeigen3-dev
@@ -40,3 +52,7 @@ boost:
 ncurses:
     debian: 
         default: libncurses-dev
+
+cunit:
+    debian:
+        default: libcunit1-dev
