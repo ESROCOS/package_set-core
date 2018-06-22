@@ -37,6 +37,10 @@ python3-mako:
     debian:
         default: python3-mako
 
+python-mako:
+    ubuntu,debian:
+        default: python-mako
+
 python3-simplejson:
     debian:
         default: python3-simplejson
