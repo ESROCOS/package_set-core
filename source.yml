@@ -62,4 +62,8 @@ version_control:
         - tools/imagetransfer:
           github: ESROCOS/tools-imagetransfer
           branch: master
+          
+        - tools/rock_bridge:
+          github: ESROCOS/tools-rock_bridge
+          branch: master
 

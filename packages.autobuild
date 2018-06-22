@@ -36,3 +36,4 @@ cmake_package "tools/imagetransfer" do |pkg|
     Esrocos.set_taste_package(pkg)
 end
 
+cmake_package "tools/rock_bridge"
