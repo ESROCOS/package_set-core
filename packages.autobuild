@@ -8,6 +8,8 @@ cmake_package "types/base_support" do |pkg|
     end
 end
 
+cmake_package "types/ros" 
+
 cmake_package "tools/workflow"
 
 cmake_package "tools/config"
@@ -37,3 +39,5 @@ cmake_package "tools/imagetransfer" do |pkg|
 end
 
 cmake_package "tools/rock_bridge"
+
+cmake_package "tools/ros2asn1"

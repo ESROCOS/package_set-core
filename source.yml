@@ -14,6 +14,10 @@ version_control:
           github: ESROCOS/types-base
           branch: master
 
+        - types/ros:
+          github: ESROCOS/types-ros
+          branch: master
+
         - types/base_support:
           github: ESROCOS/types-base_support
           branch: master
@@ -36,6 +40,10 @@ version_control:
 
         - tools/transformation_modelling:
           github: ESROCOS/tools-transformation_modelling
+          branch: master
+
+        - tools/ros2asn1:
+          github: ESROCOS/tools-ros2asn1
           branch: master
 
         # Fork of gui-robot_model from rock-gui without dependencies not needed in ESROCOS
