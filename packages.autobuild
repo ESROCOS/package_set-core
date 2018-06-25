@@ -1,10 +1,10 @@
-require 'esrocos_autoproj'
+require_relative 'esrocos_autoproj'
 
 cmake_package "types/base" 
 
 cmake_package "types/base_support" do |pkg|
-    if(ENV.has_key?('ESROCOS_RCC_TARGET'))
-        Esrocos.build_rtems_gailser(pkg, ENV['ESROCOS_RCC_TARGET'])
+    if(ENV.has_key?('ESROCOS_RTEMS_TARGET'))
+        Esrocos.build_rtems_gailser(pkg, ENV['ESROCOS_RTEMS_TARGET'])
     end
 end
 
@@ -32,6 +32,9 @@ cmake_package "control/ilk-generator"
 
 cmake_package "tools/libpus" do |pkg|
     Esrocos.set_taste_package(pkg)
+    if(ENV.has_key?('ESROCOS_RTEMS_TARGET'))
+        Esrocos.build_rtems_gailser(pkg, ENV['ESROCOS_RTEMS_TARGET'])
+    end
 end
 
 cmake_package "tools/imagetransfer" do |pkg|
