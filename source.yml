@@ -42,6 +42,10 @@ version_control:
           github: ESROCOS/tools-transformation_modelling
           branch: master
 
+        - tools/rock2asn1:
+          github: ESROCOS/tools-rock2asn1
+          branch: master
+
         - tools/ros2asn1:
           github: ESROCOS/tools-ros2asn1
           branch: master

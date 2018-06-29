@@ -43,4 +43,6 @@ end
 
 cmake_package "tools/rock_bridge"
 
+cmake_package "tools/rock2asn1"
+
 cmake_package "tools/ros2asn1"
