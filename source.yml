@@ -79,3 +79,7 @@ version_control:
           github: ESROCOS/tools-rock_bridge
           branch: master
 
+        - tools/ros_bridge:
+          github: ESROCOS/tools-ros_bridge
+          branch: master
+
