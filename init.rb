@@ -15,6 +15,8 @@ Autoproj.env_add_path 'C_INCLUDE_PATH', "$AUTOPROJ_CURRENT_ROOT/install/include"
 
 Autoproj.env_add_path 'CPATH', "$AUTOPROJ_CURRENT_ROOT/install/include"
 
+Autoproj.env_add_path 'LD_LIBRARY_PATH', "$AUTOPROJ_CURRENT_ROOT/install/lib/orocos/types"
+
 # Autoproj changes PYTHONUSERBASE, but we need access to Python packages installed at system level 
 # (e.g., packages installed by TASTE at the default location), so we add the default user-site to 
 # PYTHONPATH.
