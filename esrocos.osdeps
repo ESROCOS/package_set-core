@@ -55,7 +55,7 @@ boost:
 
 ncurses:
     debian: 
-        default: libncurses-dev
+        default: libncurses5-dev
 
 cunit:
     debian:
