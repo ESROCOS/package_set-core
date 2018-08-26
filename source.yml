@@ -67,13 +67,10 @@ version_control:
           github: ESROCOS/gui-vizkit3d_taste
           branch: master
 
-        - control/ilk-compiler:
-          github: ESROCOS/ilk-compiler.git
-          branch: dev-autoproj
-
-        - control/ilk-generator:
-          github: ESROCOS/ilk-generator.git
-          branch: dev-autoproj
+        # The kinematics code generator
+        - control/kin-gen:
+          github: ESROCOS/kin-gen
+          branch: autoproj
           
         - tools/libpus:
           github: ESROCOS/tools-libpus

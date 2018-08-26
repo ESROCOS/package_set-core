@@ -19,7 +19,7 @@ ant:
 
 lua:
     debian:
-        default: [lua5.2, luarocks, liblua5.2-dev]
+        default: [lua5.2, liblua5.2-dev]
 
 python3-pyside:
     debian:
