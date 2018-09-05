@@ -16,6 +16,8 @@ cmake_package "tools/config"
 
 cmake_package "tools/transformer"
 
+cmake_package "tools/stream_aligner"
+
 cmake_package "tools/transformer_pybind"
 
 cmake_package "tools/transformation_modelling"
