@@ -30,6 +30,10 @@ version_control:
           github: ESROCOS/tools-config
           branch: master
 
+        - tools/stream_aligner:
+          github: ESROCOS/tools-stream_aligner
+          branch: master
+
         - tools/transformer:
           github: ESROCOS/tools-transformer
           branch: master
