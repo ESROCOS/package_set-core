@@ -26,11 +26,9 @@ cmake_package "gui/vizkit3d_taste" do |pkg|
     Esrocos.set_taste_package(pkg)
 end
 
-cmake_package "control/ilk-compiler" do |pkg|
-   Autoproj.env_add("LUA_PATH", pkg.srcdir + "/?.lua")
+cmake_package "control/kin-gen" do |pkg|
+   Autoproj.env_add("KIN_GEN_ROOT", pkg.srcdir)
 end
-
-cmake_package "control/ilk-generator"
 
 cmake_package "tools/libpus" do |pkg|
     Esrocos.set_taste_package(pkg)
