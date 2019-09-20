@@ -37,10 +37,6 @@ cmake_package "tools/libpus" do |pkg|
     end
 end
 
-cmake_package "tools/imagetransfer" do |pkg|
-    Esrocos.set_taste_package(pkg)
-end
-
 cmake_package "tools/rock_bridge"
 
 cmake_package "tools/ros_bridge"

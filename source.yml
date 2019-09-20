@@ -1,14 +1,6 @@
 name: esrocos.core
 
-imports:
-
-        - github: orocos-toolchain/autoproj
-        - github: rock-core/package_set
-        - github: rock-core/rock-package_set
-
 version_control:
-
-        
 
         - types/base:
           github: ESROCOS/types-base
