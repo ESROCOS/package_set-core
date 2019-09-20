@@ -46,18 +46,6 @@ python3-simplejson:
     debian:
         default: python3-simplejson
 
-eigen:
-    debian:
-        default: libeigen3-dev
-
-boost:
-    debian: 
-        default: libboost-all-dev
-
-ncurses:
-    debian: 
-        default: libncurses5-dev
-
 cunit:
     debian:
         default: libcunit1-dev
