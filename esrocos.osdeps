@@ -49,3 +49,12 @@ python3-simplejson:
 cunit:
     debian:
         default: libcunit1-dev
+        
+sysfs:
+    ubuntu,debian: 
+        default: libsysfs-dev
+        
+libusb-old:
+    ubuntu:
+        default: libusb-1.0-0-dev
+        
