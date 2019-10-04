@@ -66,7 +66,7 @@ version_control:
           
         - tools/libpus:
           github: ESROCOS/tools-libpus
-          branch: master
+          branch: up-ubuntu18
 
         - tools/imagetransfer:
           github: ESROCOS/tools-imagetransfer
