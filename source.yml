@@ -2,28 +2,48 @@ name: esrocos.core
 
 version_control:
 
-        - types/base:
-          github: ESROCOS/types-base
+        - control/kin-gen:
+          github: ESROCOS/kin-gen
+          branch: autoproj
+
+        - gui/vizkit3d_taste:
+          github: ESROCOS/gui-vizkit3d_taste
           branch: master
 
-        - types/ros:
-          github: ESROCOS/types-ros
-          branch: master
-
-        - types/base_support:
-          github: ESROCOS/types-base_support
-          branch: master
-
-        - tools/workflow:
-          github: ESROCOS/tools-workflow
-          branch: master
-          
         - tools/config:
           github: ESROCOS/tools-config
           branch: master
 
+        - tools/libpus:
+          gmvgit: PERASPERA/MOSAR/ESROCOS/tools-libpus
+          branch: master
+
+        - tools/rock2asn1:
+          github: ESROCOS/tools-rock2asn1
+          branch: master
+
+        - tools/rock_bridge:
+          github: ESROCOS/tools-rock_bridge
+          branch: master
+
+        - tools/ros2asn1:
+          github: ESROCOS/tools-ros2asn1
+          branch: master
+
+        - tools/ros_bridge:
+          github: ESROCOS/tools-ros_bridge
+          branch: master
+
         - tools/stream_aligner:
           github: ESROCOS/tools-stream_aligner
+          branch: master
+
+        - tools/taste2rock:
+          github: ESROCOS/tools-taste2rock
+          branch: master
+
+        - tools/transformation_modelling:
+          github: ESROCOS/tools-transformation_modelling
           branch: master
 
         - tools/transformer:
@@ -34,49 +54,18 @@ version_control:
           github: ESROCOS/tools-transformer_pybind
           branch: master
 
-        - tools/transformation_modelling:
-          github: ESROCOS/tools-transformation_modelling
-          branch: master
-
-        - tools/rock2asn1:
-          github: ESROCOS/tools-rock2asn1
-          branch: master
-
-        - tools/ros2asn1:
-          github: ESROCOS/tools-ros2asn1
-          branch: master
-
-        - tools/taste2rock:
-          github: ESROCOS/tools-taste2rock
-          branch: master
-
-        # Fork of gui-robot_model from rock-gui without dependencies not needed in ESROCOS
-        - gui/robot_model:
-          github: ESROCOS/gui-robot_model
-          branch: master
-
-        - gui/vizkit3d_taste:
-          github: ESROCOS/gui-vizkit3d_taste
-          branch: master
-
-        # The kinematics code generator
-        - control/kin-gen:
-          github: ESROCOS/kin-gen
-          branch: autoproj
-          
-        - tools/libpus:
-          github: ESROCOS/tools-libpus
-          branch: up-ubuntu18
-
-        - tools/imagetransfer:
-          github: ESROCOS/tools-imagetransfer
+        - tools/workflow:
+          github: ESROCOS/tools-workflow
           branch: master
           
-        - tools/rock_bridge:
-          github: ESROCOS/tools-rock_bridge
+        - types/base:
+          github: ESROCOS/types-base
           branch: master
 
-        - tools/ros_bridge:
-          github: ESROCOS/tools-ros_bridge
+        - types/base_support:
+          github: ESROCOS/types-base_support
           branch: master
 
+        - types/ros:
+          github: ESROCOS/types-ros
+          branch: master
