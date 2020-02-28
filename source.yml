@@ -7,7 +7,7 @@ version_control:
           branch: autoproj
 
         - gui/vizkit3d_taste:
-          github: ESROCOS/gui-vizkit3d_taste
+          gmvgit: PERASPERA/MOSAR/ESROCOS/gui-vizkit3d_taste
           branch: master
 
         - tools/config:
