@@ -20,7 +20,7 @@ Autoproj.env_add_path 'LD_LIBRARY_PATH', "$AUTOPROJ_CURRENT_ROOT/install/lib/oro
 # Autoproj changes PYTHONUSERBASE, but we need access to Python packages installed at system level 
 # (e.g., packages installed by TASTE at the default location), so we add the default user-site to 
 # PYTHONPATH.
-default_python3_user_base = `env -i python3 -m site --user-site`.chop
+default_python3_user_base = "`env -i python3 -m site --user-site`".chop
 Autoproj.env_add_path 'PYTHONPATH', default_python3_user_base, "$AUTOPROJ_CURRENT_ROOT/install/lib/python"
 
 Autoproj.env_set 'ESROCOS_TEMPLATES', ENV["AUTOPROJ_CURRENT_ROOT"]+"/install/templates"
