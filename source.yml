@@ -7,8 +7,8 @@ version_control:
           branch: autoproj
 
         - gui/vizkit3d_taste:
-          gmvgit: PERASPERA/MOSAR/ESROCOS/gui-vizkit3d_taste
-          branch: master
+          github: ESROCOS/gui-vizkit3d_taste
+          branch: kazoo
 
         - tools/config:
           github: ESROCOS/tools-config
@@ -16,7 +16,7 @@ version_control:
 
         - tools/libpus:
           gmvgit: PERASPERA/MOSAR/ESROCOS/tools-libpus
-          branch: master
+          branch: kazoo
 
         - tools/rock2asn1:
           github: ESROCOS/tools-rock2asn1
@@ -56,7 +56,7 @@ version_control:
 
         - tools/workflow:
           github: ESROCOS/tools-workflow
-          branch: master
+          branch: mosar
           
         - types/base:
           github: ESROCOS/types-base
