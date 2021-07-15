@@ -15,7 +15,7 @@ version_control:
           branch: master
 
         - tools/libpus:
-          gmvgit: PERASPERA/MOSAR/ESROCOS/tools-libpus
+          github: ESROCOS/tools-libpus
           branch: master
 
         - tools/rock2asn1:
