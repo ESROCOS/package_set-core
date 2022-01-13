@@ -5,7 +5,7 @@ control/sdformat:
     ubuntu:
         '14.04,14.10,15.04,15.10': nonexistent
         '16.04': libsdformat4-dev
-        '18.04': libsdformat6-dev
+        '18.04, 20.04': libsdformat6-dev
 ivy:
     debian:
         default: ivy
@@ -25,10 +25,14 @@ lua:
 python3-pyside:
     debian:
         default: python3-pyside
+    ubuntu:
+        '20.04': python3-pyside2.*
 
 pyside-tools:
     debian:
         default: pyside-tools
+    ubuntu:
+        '20.04': pyside2-tools
 
 python3-jsonschema:
     debian:
