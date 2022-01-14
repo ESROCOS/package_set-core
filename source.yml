@@ -12,11 +12,11 @@ version_control:
 
         - tools/config:
           github: ESROCOS/tools-config
-          branch: master
+          branch: ubuntu20
 
         - tools/libpus:
           github: ESROCOS/tools-libpus
-          branch: master
+          branch: ubuntu20
 
         - tools/rock2asn1:
           github: ESROCOS/tools-rock2asn1
