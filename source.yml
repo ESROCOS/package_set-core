@@ -56,7 +56,7 @@ version_control:
 
         - tools/workflow:
           github: ESROCOS/tools-workflow
-          branch: master
+          branch: ubuntu20
           
         - types/base:
           github: ESROCOS/types-base
