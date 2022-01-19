@@ -64,7 +64,7 @@ version_control:
 
         - types/base_support:
           github: ESROCOS/types-base_support
-          branch: master
+          branch: ubuntu20
 
         - types/ros:
           github: ESROCOS/types-ros
