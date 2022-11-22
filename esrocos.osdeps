@@ -26,13 +26,13 @@ python3-pyside:
     debian:
         default: python3-pyside
     ubuntu:
-        '20.04': python3-pyside2.*
-
+        '20.2,20.04': python3-pyside2.*
+        
 pyside-tools:
     debian:
         default: pyside-tools
     ubuntu:
-        '20.04': pyside2-tools
+        '20.2,20.04': pyside2-tools
 
 python3-jsonschema:
     debian:
